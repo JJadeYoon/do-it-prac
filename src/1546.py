@@ -19,6 +19,8 @@ numbers = list(map(int, input().split()))
 
 max_num = max(numbers)
 numbers = map((lambda num: num / max_num * 100), numbers)
+# 한 과목과 관련된 수식을 총합한 후 수식으로 변환해 로직을 간단하게 할 수 있음
+# print(sum * 100 / max_num / n)
 avg = sum(numbers) / n
 
 print(avg)
